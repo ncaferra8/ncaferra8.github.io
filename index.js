@@ -796,7 +796,7 @@
             }
 
             var distanceAndroid = this.distanceRan ? Math.round(this.distanceRan * this.distanceMeter.config.COEFFICIENT) : 0;
-            Android.sendJsMsgToWebView(distanceAndroid);
+            Print.postMessage(distanceAndroid);
 
             // Reset the time clock.
             this.time = getTimeStamp();
